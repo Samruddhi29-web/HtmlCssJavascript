@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>This is my heading</h2>
+    <p>Hey guys, what are you doing ?
+        is everything fine?
+    </p>
+    <button>Hey click me</button>
+    <script>
+        let msg = "Hey, I am samruddhi !"
+        //window.alert(msg);
+        //or
+        alert(msg)
+        //prompt to take input from user
+        
+        // prompt("Enter your name ") or
+        let name = prompt("Enter your name ")
+        alert("Hello " +name)
+        //confirmbox 
+        let choice = confirm("Want to open google?")
+        //alert(choice)
+        if(choice){
+            location.href = "https://www.google.com"
+        }else{
+            alert("not navigating to google ")
+        }
+        //console object - log, info,warn, error, table ,time, clear
+        console.log("Hey, this is a log ")
+        console.warn("Hey, this is warning ")
+        console.error("I am error")
+        console.info("trying")
+        //console.clear();
+        // setTimeout(function(){
+        //     console.log("clearing..");
+        //     console.clear()
+        // },3000);
+        //object ->
+        let student = {
+            name : "Sam",
+            address : "Pune",
+            phone : "238729482"
+        };
+        // console.log(student)
+        // console.log(student.name);
+        console.table(student);
+    </script>
+</body>
+</html>

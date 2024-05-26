@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Five important string operations</h1>
+    <script>
+        //check equality of 2 strings
+        //Literal
+        let str1 = "Javascript";
+        let str2 = "Javascript";
+        if(str1 == str2){
+            console.log("both strings are equal")
+        }
+        let str3 = new String("Javascript")
+        let str4 = new String("Javascript")
+        console.log(str3 == str4)//false
+        //Comparing 2 strings
+        let s1 = "A";
+        let s2 = "B";
+        //local compare function
+        let result = s1.localCompare(s2)//if exact matching = 0;
+        //if s1<s2 = -1
+        //if s1>s2 = 1
+    </script>
+    
+</body>
+</html>
